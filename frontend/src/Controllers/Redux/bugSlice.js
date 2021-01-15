@@ -1,12 +1,12 @@
 import {createSlice} from '@reduxjs/toolkit'
+import { retrieveBugs } from '../bugController'
 
 const slice = createSlice({
     name:"bug", 
     initialState:[],
     reducers:{
-        getBugs:(state) =>{
+        getBugs:(state) => retrieveBugs(),
 
-        },
         createBugs:(state, actions) =>{
 
         },
@@ -14,7 +14,7 @@ const slice = createSlice({
 
         },
         markComplete:(state, actions) =>{
-            
+
         }
     }
 })
